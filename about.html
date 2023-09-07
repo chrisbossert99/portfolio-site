@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <div>
+        <div class="container">
             <h3>About Me</h3>
 
             <nav>
@@ -32,13 +32,13 @@
     </header>
     <main>
         <div>
-            <div>
+            <div class="container">
                 <picture>
                     <source srcset="img/img/headshot-600.png" media="(max-width:200px)">
                     <img src="img/img/headshot-1200.png" alt="headshot" class="center">
                 </picture>
-                <section id="intro">
-                    <div id="hero">
+                <section id="intro" class="row">
+                    <div id="hero" class="column">
                         <h1>My Design Journey</h1>
                         <p>I embarked on my design journey with a strong foundation in design principles and a curiosity
                             for
@@ -47,51 +47,52 @@
                             diverse projects, I have honed my skills in wireframing, prototyping, and collaborating with
                             cross-functional teams.</p>
                     </div>
-                    <div>
-                        <div id="skills"><!-- Row -->
-                            <div><!-- Column -->
-                                <h2>Skills</h2>
-                                <ul>
-                                    <li>
-                                        <p>UX/UI</p>
-                                    </li>
-                                    <li>
-                                        <p>Wireframing</p>
-                                    </li>
-                                    <li>
-                                        <p>Prototyping</p>
-                                    </li>
-                                    <li>
-                                        <p>Frontend</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="skills"><!-- Column -->
-                                <h2>Tools</h2>
-                                <ul>
-                                    <li>
-                                        <p>Figma</p>
-                                    </li>
-                                    <li>
-                                        <p>Adobe Illustrator</p>
-                                    </li>
-                                    <li>
-                                        <p>Adobe Photoshop</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
             </div>
-            </section>
+            <div class="column">
+                <div id="skills" class="row">
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <p>UX/UI</p>
+                            </li>
+                            <li>
+                                <p>Wireframing</p>
+                            </li>
+                            <li>
+                                <p>Prototyping</p>
+                            </li>
+                            <li>
+                                <p>Frontend</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="skills" class="column">
+                        <h2>Tools</h2>
+                        <ul>
+                            <li>
+                                <p>Figma</p>
+                            </li>
+                            <li>
+                                <p>Adobe Illustrator</p>
+                            </li>
+                            <li>
+                                <p>Adobe Photoshop</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
         </div>
     </main>
     <footer id="contact">
         <div>
             <h2>Contact Me</h2>
             <p>Feel free to reach out with any inquires<a href="tel:#">number goes here</a>
-            <div><a href="bossert.chris99@gmail.com" class="button Contact">Email</a></div>
+            <div><a href="bossert.chris99@gmail.com" class="button Contact">Email</a></div><br></br>
             <div><!--Social Media Layout and Placeholders--><a
                     href="https://www.linkedin.com/in/chris-bossert-36365b270/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
