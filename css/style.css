@@ -5,7 +5,7 @@ Secondary Color (Green): #489c79;
 */
 * {
   margin: 0;
-  padding: 0;
+  padding: 20;
   box-sizing: border-box;
 }
 header {
@@ -26,9 +26,9 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
   body {
-    background-color: #ffffff;
+    background-color: #558255;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 14px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #ffffff;
@@ -57,6 +57,7 @@ body {
   }
   img {
     width: 100%;
+    padding: 0px
   }
   .center {
     display: block;
@@ -66,13 +67,14 @@ body {
   }
   .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #558255;
+    background-color: #304d30;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #558255; /* width of the border, type, color */
     transition: 0.2s opacity;
+  
   }
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -97,15 +99,16 @@ body {
   }
   #hero h1 {
     text-align: center; /* Centers text */
+
   }
   #hero {
     background-color: #558255;
-  }
-  #hero {
-    background-color: #558255;
-    padding: 15px 0;
+    padding: 20px 0;
     display: inline-block;
     width: 100%;
+  }
+  #hero span {
+    display: block;
   }
   .logo {
     max-width: 250px;
@@ -118,6 +121,7 @@ body {
     display: inline-block;
   }
   nav > ul > li > a {
+    width: 100%;
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -136,4 +140,68 @@ footer {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
+}/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  }
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: -25px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px 
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: -25px;
+  }
+  .col-lg-7 {
+    width: 58.33%
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px 
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
