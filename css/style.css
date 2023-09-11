@@ -232,6 +232,9 @@ Medium devices (640px and larger)
   clear: both;
   display: table;
 }
+nav > ul > li {
+  display: inline-block;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
