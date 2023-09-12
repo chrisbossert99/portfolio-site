@@ -5,7 +5,7 @@ Secondary Color (Green): #489c79;
 */
 * {
   margin: 0;
-  padding: 20;
+  padding: 0;
   box-sizing: border-box;
 }
 header {
@@ -163,19 +163,61 @@ height: auto;
     font-weight: 700;
     color: #ffffff;
   }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    width: auto;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+  }
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid white;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
+
 footer {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
   padding-top: 133px;
+  padding-bottom: 20px;
+}
+.social {
+  padding-top: 50px
+}
+.email { padding-top: 20px;
 }
 #skills {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
+}
+#skills ul {
+  list-style-type: none;
 }
 
 .col-sm-1 {width: 8.33%;}
@@ -211,6 +253,12 @@ Medium devices (640px and larger)
     float: right;
     margin-top: -25px;
   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  } 
   .col-md-1 {width: 8.33%;}
   .col-md-2 {width: 16.66%;}
   .col-md-3 {width: 25%;}
@@ -247,7 +295,15 @@ Large devices (1024px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: -25px;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  } 
+  nav > ul {
+    margin: 1em 0;
   }
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
