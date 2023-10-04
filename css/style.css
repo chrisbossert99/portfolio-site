@@ -9,7 +9,7 @@ Secondary Color (Green): #489c79;
   box-sizing: border-box;
 }
 header {
-  background-color: #558255;
+  background-color: #558155;
   text-align: center;
   padding: 10px 0;
 	box-shadow: 5px 5px 20px #000000;
@@ -26,7 +26,7 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
   body {
-    background-color: #558255;
+    background-color: #558155;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
